@@ -13,6 +13,8 @@ class Instructor::CoursesController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+    puts "********************"
+    puts params.inspect
 	end
 
   def show
@@ -33,6 +35,6 @@ class Instructor::CoursesController < ApplicationController
 
 
   def course_params
-    params.require(:course).permit(:title, :description, :cost)
+    params.require(:course).permit(:title, :description, :cost, :image)
   end
 end

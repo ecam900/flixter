@@ -11,6 +11,7 @@ Flixter::Application.routes.draw do
       resources :sections, only: [:new, :create]
     end
   end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
