@@ -52,3 +52,4 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'figaro'
 gem "fog", "~> 1.3.1"
+gem 'mini_magick', '~> 4.3.1'
