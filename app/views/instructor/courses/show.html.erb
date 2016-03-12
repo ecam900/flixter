@@ -22,7 +22,7 @@
         type: 'PUT',
         url: ui.item.data('update-url'),
         dataType: 'json',
-        data: { lesson: { row_order_position: ui.item.index() } }
+        data: { section: { row_order_position: ui.item.index() } }
       });
     }
   });
@@ -45,7 +45,7 @@
   <hr />
 	<ul class="sections">
 		<% current_course.sections.rank(:row_order).each do |section| %>
-			<li data-update-url="<%= instructor_section_path(section) %>">
+			<li data-update-url="<%= instructor_section_path(section) %>" class="section-li">>
 				<%= section.title %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'pull-right btn btn-success btn-xs' %>
         <ul class="lessons">
