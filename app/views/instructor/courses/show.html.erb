@@ -1,27 +1,23 @@
 <script>
-  
-  // Lesson Drag Functionality
-	$(function () {
-
-    $('.new-lesson-button').click(function( event ) {
-      var lessonUrl = $( event.target).data('lesson-url');
-      $('#newLessonForm').attr('action', lessonUrl);
-    });
-
-		$('.lessons').sortable({
-  		update: function( event, ui ) {
-        $.ajax({
-          type: 'PUT',
-          url: ui.item.data('update-url'),
-          dataType: 'json',
-          data: { lesson: { row_order_position: ui.item.index() } }
-        });
-      }
-		});
-	});
-
-  // Section Drag Functionality
-  $(function () {
+$(function() {
+  $('.new-lesson-button').click(function( event ) {
+    var lessonUrl = $(event.target).data('lesson-url');
+    $('#newLessonForm').attr('action', lessonUrl);
+  });
+  $('.lessons').sortable({
+    update: function( event, ui ) {
+      $.ajax({
+        type: 'PUT',
+        url: ui.item.data('update-url'),
+        dataType: 'json',
+        data: { lesson: { row_order_position: ui.item.index() } }
+      });
+    }
+  });
+});
+</script>
+<script>
+$(function() {
   $('.sections').sortable({
     update: function( event, ui ) {
       $.ajax({
@@ -33,7 +29,6 @@
     }
   });
 });
-
 </script>
 
 <br />
@@ -121,7 +116,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="newLessonModal" aria-hidden="true">
+<div class="modal fade" id="newLessonModal" tabindex="-1" role="dialog" aria-labelledby="newLessonModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
