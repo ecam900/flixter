@@ -81,13 +81,8 @@
         <%= link_to 'My Dashboard', dashboard_path %>
       </div>
       <div class="col-xs-12 col-sm-3">
-        <b>About</b>
         <br />
-        <%= link_to 'Team', '#' %>
-        <br />
-        <%= link_to 'Careers', '#' %>
-        <br />
-        <%= link_to 'Privacy Policy', '#' %>
+        <%= link_to 'Privacy Policy', privacy_path %>
       </div>
       <div class="col-xs-12 col-sm-3">
         <b>Contact</b>
@@ -99,12 +94,11 @@
       <div class="col-xs-12 col-sm-3 social">
         <b>Social</b>
         <br />
-        <br />
         <%= link_to 'http://github.com/ecam900' do %>
-          <%= image_tag 'Github.png', class: 'social-button' %>
+          <%= image_tag 'github.png', class: 'social-button' %>
         <% end %>
         <%= link_to 'http://facebook.com/ericcrescioni' do %>
-         <%= image_tag 'facebook.png', class: 'social-button' %>
+         <%= image_tag 'Facebook.png', class: 'social-button' %>
         <% end %>
       </div>
     </div>
