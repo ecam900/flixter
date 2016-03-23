@@ -29,7 +29,7 @@ class Instructor::LessonsController < ApplicationController
 		end
 	end
 
-	def current_lesson
+	def current_lesson  #Memoizing
 		@current_lesson ||= Lesson.find(params[:id])
 	end
 

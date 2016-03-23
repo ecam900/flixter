@@ -19,7 +19,7 @@ class EnrollmentsController < ApplicationController
 		      :currency    => 'usd'
 		    )
 		end
-
+								# Can call 'build' instead of create to not save.					
 	    current_user.enrollments.create(course: current_course)
 	    redirect_to course_path(current_course)
 	  rescue Stripe::CardError => e
