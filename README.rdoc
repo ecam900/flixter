@@ -1,28 +1,12 @@
-== README
+== Flixter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Udemy-like website with the aim of becoming the go-to place for learning and teaching Horticulture. You can teach, or take a class.
 
-Things you may want to cover:
+== Features
+- <b>User dashboards</b> for teachers and students. Teachers can manage their classes and students enrolled in the classes cannot access the admin panel. 
+- <b>Video uploading</b> with storage in AWS.
+- <b>Payment processing</b> with Stripe.
+- <b>Mobile-first,</b> responsive design
+- <b>JQuery and AJAX</b> for easy course dragging and moving around in the teacher's dashboard.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+See it live here: http://flixter-eric-crescioni.herokuapp.com/dashboard
